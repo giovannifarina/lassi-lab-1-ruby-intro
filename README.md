@@ -1,15 +1,8 @@
 Ruby Intro
 =============
 
-This 3-part homework gives some basic practice in Ruby as well as
-getting you accustomed to making testing a regular part of your workflow.
-
-**NOTE: If you are working on a local computer, do not clone this repo to your workspace. Fork it first, then clone your fork.**
-
-
 Learning Goals
 --------------
-After completing this assignment, you will know how to:
 
 * Write simple code that uses basic constructs in the Ruby language, including methods and arguments, conditionals, string and array manipulation, regular expressions, and basic object-oriented programming mechanisms
 * Understand the Ruby project conventions for where code files and test files are located in a project's directory hierarchy
@@ -41,25 +34,20 @@ give you guidance as to which tests failed.  (You can check the [RSpec
 documentation](http://rspec.info) to see how the `.rspec` file can be
 used to customize the output format.)
 
-If you are working in Codio, you are ready to move on to the next part. If you are working on a local computer, proceed with the following steps.
-
-| Local computer setup |
-|-----|
-Ensure that Ruby 2.6.6 is installed.
 
 To ensure you have the rspec gem installed you need bundler and can then 
 run bundle install like so:
 ```sh
 $ gem install bundler
-$ cd assignment
-$ bundle
+$ cd ruby-intro
+$ bundle install
 ```
 When the above completes successfully you'll have RSpec installed and can
 run `rspec` from the command line to test your code.
 
 # 1. Arrays, Hashes, and Enumerables
 
-Check the [Ruby 2.x documentation](http://ruby-doc.org) on `Array`,
+Check the [Ruby documentation](http://ruby-doc.org) on `Array`,
 `Hash` and `Enumerable` as they could help tremendously with these
 exercises. Various Ruby cheatsheets are also helpful as a quick reference! Although Ruby supports looping constructs like 'for' and 'while', consider using block syntax with each for a more idiomatic use of Ruby. :-) 
 
@@ -95,17 +83,3 @@ The constructor should accept the ISBN number (a string, since in real life ISBN
 Include a method `price_as_string` that returns the price of the book formatted with a leading dollar sign and two decimal places, that is, a price of 20 should format as `$20.00` and a price of 33.8 should format as `$33.80`. Check out formatted string methods in Ruby. Run associated tests via:  `$ rspec -e '#price_as_string' spec/part3_spec.rb`
 
 You can check your progress on all of the above by running `rspec spec/part3_spec.rb`.
-
-
-## More Challenges
-
-* Try getting setup with 
-an automated test framework such as [guard](http://code.tutsplus.com/tutorials/testing-your-ruby-code-with-guard-rspec-pry--cms-19974) or [autotest](https://rubygems.org/gems/autotest).  Guard or AutoTest can be set up so that 
-they will run all the tests in `spec/`, but every time you edit and save 
-your code file, the tests are automatically re-run, so you don't have to 
-run them manually.  As we'll see later, this is the "watch the test fail" 
-part of the TDD or test-driven process of development: write the tests before
-you write the code, watch the test fail, fill in the code and save the code file, 
-then watch the test pass!
-
-* Try pairing using the [one-undermanship pair programming style](http://www.agileventures.org/remote-pair-programming/pair-programming-protocols)
