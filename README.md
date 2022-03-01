@@ -39,7 +39,7 @@ To ensure you have the rspec gem installed you need bundler and can then
 run bundle install like so:
 ```sh
 $ gem install bundler
-$ cd ruby-intro
+$ cd lassi-lab-1-ruby-intro-master
 $ bundle install
 ```
 When the above completes successfully you'll have RSpec installed and can
